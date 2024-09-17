@@ -19,9 +19,9 @@ int main () {
     sys.L2 = 1.5; //length 2 (m)
 
     //initial conditions
-    sys.set_sol(0,  2); //initial angle of first mass
+    sys.set_sol(0,  0); //initial angle of first mass
     sys.set_sol(1,  0); //initial angular momentum of first mass
-    sys.set_sol(2, -2); //initial angle of second mass
+    sys.set_sol(2,  0); //initial angle of second mass
     sys.set_sol(3,  0); //initial angular momentum of second mass
 
     //integration parameters

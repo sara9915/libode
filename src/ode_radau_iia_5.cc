@@ -61,6 +61,8 @@ OdeRadauIIA5::OdeRadauIIA5 (unsigned long neq) :
     OdeAdaptive (neq, true),
     OdeIRK (neq, 3) {
 
+        std::cout << "neq: " << neq << std::endl;
+
     method_ = "RadauIIA5";
 
     int nk = 3;

@@ -1,5 +1,5 @@
 #name of example
-ex=double_pendulum
+ex=inverted_pendulum
 
 #compile
 make
