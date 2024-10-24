@@ -14,6 +14,11 @@ if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	include(CTest)
 endif()
 
+if(NOT CMAKE_BUILD_TYPE)
+  message("RELEASE BUILD")
+ set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
+endif()
+
 # source files
 file (GLOB_RECURSE ODE_SRC CONFIGURE_DEPENDS
        ${PROJECT_SOURCE_DIR}/src/*.cc
